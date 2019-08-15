@@ -6,6 +6,7 @@
 
 <script>
   import cron from 'node-cron'
+  import quotes from '@/quotes'
 
   export default {
     name: 'home',
@@ -28,12 +29,18 @@
           })
         }
       },
+      getRandomQuote() {
+        const max = quotes.length
+        // returns a random integer up to max - 1
+        const i = Math.floor(Math.random() * Math.floor(max))
+        return quotes[i]
+      },
       showNotification() {
         if ('serviceWorker' in navigator) {
           navigator.serviceWorker.ready // returns a Promise, the active SW registration
             .then(swreg => {
               swreg.showNotification('Notifications granted', {
-                body: 'Here is a first notification',
+                body: this.getRandomQuote().body,
                 icon: '/img/icons/android-chrome-192x192.png',
                 //image: '/img/autumn-forest.png',
                 vibrate: [300, 200, 300],
@@ -50,12 +57,9 @@
     created() {
       if ('Notification' in window && 'serviceWorker' in navigator) {
         this.notificationsSupported = true
-        cron.schedule('1 46 10 * * *', () => {
+        cron.schedule('1 7 11 * * *', () => {
           this.showNotification()
         })
-        /*setInterval(() => {
-          this.showNotification()
-        }, 10000)*/
       }
     },
   }
