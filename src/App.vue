@@ -1,8 +1,13 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <h1>Welcome to The Quotes App</h1>
+    <p>
+      This app will send you one random quote each day.
+    </p>
+    <p>
+      Think of it as a random message from the universe ;-)
+    </p>
     <PwaNotification />
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
