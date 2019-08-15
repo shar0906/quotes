@@ -61,7 +61,7 @@
       if ('Notification' in window && 'serviceWorker' in navigator) {
         this.notificationsSupported = true
         //cron.schedule('30 17 11 * * *', () => {
-        cron.schedule('15,30,45,60 * * * * *', () => { // 4 testing
+        cron.schedule('0,15,30,45 * * * * *', () => { // 4 testing
           this.showNotification()
         })
       }
