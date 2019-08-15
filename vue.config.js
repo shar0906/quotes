@@ -1,4 +1,5 @@
 module.exports = {
+  outputDir: 'docs',
   pwa: {
     workboxPluginMode: 'InjectManifest',
     workboxOptions: {
