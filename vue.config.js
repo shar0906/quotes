@@ -1,6 +1,6 @@
 module.exports = {
   outputDir: 'docs',
-  publicPath: 'quotes',
+  publicPath: '/quotes/',
   pwa: {
     workboxPluginMode: 'InjectManifest',
     workboxOptions: {
