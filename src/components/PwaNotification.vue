@@ -36,11 +36,14 @@
         return quotes[i]
       },
       showNotification() {
+        const quote = this.getRandomQuote().body
+        console.log(quote)
+
         if ('serviceWorker' in navigator) {
           navigator.serviceWorker.ready // returns a Promise, the active SW registration
             .then(swreg => {
               swreg.showNotification('Notifications granted', {
-                body: this.getRandomQuote().body,
+                body: quote,
                 icon: '/img/icons/android-chrome-192x192.png',
                 //image: '/img/autumn-forest.png',
                 vibrate: [300, 200, 300],
@@ -57,7 +60,7 @@
     created() {
       if ('Notification' in window && 'serviceWorker' in navigator) {
         this.notificationsSupported = true
-        cron.schedule('1 11 11 * * *', () => {
+        cron.schedule('1 15 11 * * *', () => {
           this.showNotification()
         })
       }
