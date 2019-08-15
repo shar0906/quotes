@@ -48,7 +48,7 @@ export default {
             this.notificationsSupported = true
           setInterval(() => {
             this.showNotification()
-          }, 600000)
+          }, 10000)
         }
     },
 }
