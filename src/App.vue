@@ -1,8 +1,13 @@
-<template>
-  <div id="app">
-    {{ quote }}
+<template lang="pug">
+  #app
+
+    a(
+      v-if="quote.link"
+      :href="quote.link"
+    ) {{ quote.body }}
+
+    span(v-else) {{ quote.body }}
     <!--<PwaNotification />-->
-  </div>
 </template>
 
 <script>
@@ -20,7 +25,7 @@
       PwaNotification,
     },
     mounted() {
-      this.quote = getRandomQuote().body
+      this.quote = getRandomQuote()
     },
   }
 </script>

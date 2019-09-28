@@ -1,5 +1,18 @@
 export const quotes = [
   {
+    body: 'Mood is Illusion',
+  },
+  {
+    body: 'See self in other',
+  },
+  {
+    body: 'What does finishing look like here?',
+  },
+  {
+    body: 'Mood swings as unresolved internal conflicts',
+    link: 'https://docs.google.com/document/d/1u1-az7tKfeVusg4fxPGbpZKierFkID-N8psiTrOrPqQ/edit',
+  },
+  {
     body: '"Nothing Bad is Happening" said the Giraffe to the Scared Boy',
   },
   {
