@@ -1,4 +1,4 @@
-export default [
+export const quotes = [
   {
     body: '"Nothing Bad is Happening" said the Giraffe to the Scared Boy',
   },
@@ -36,3 +36,12 @@ export default [
     body: 'Make a decision once. Then just make efforts. -Luna',
   },
 ]
+
+export function getRandomQuote() {
+  const max = quotes.length
+  // returns a random integer up to max - 1
+  const i = Math.floor(Math.random() * Math.floor(max))
+  return quotes[i]
+}
+
+export default quotes

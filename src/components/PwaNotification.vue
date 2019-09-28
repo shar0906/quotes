@@ -6,7 +6,7 @@
 
 <script>
   import cron from 'node-cron'
-  import quotes from '@/quotes'
+  import { getRandomQuote } from '@/quotes'
 
   export default {
     name: 'home',
@@ -29,14 +29,8 @@
           })
         }
       },
-      getRandomQuote() {
-        const max = quotes.length
-        // returns a random integer up to max - 1
-        const i = Math.floor(Math.random() * Math.floor(max))
-        return quotes[i]
-      },
       showNotification() {
-        const quote = this.getRandomQuote().body
+        const quote = getRandomQuote().body
         console.log(quote)
 
         if ('serviceWorker' in navigator) {
