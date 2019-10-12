@@ -1,5 +1,29 @@
 export const quotes = [
   {
+    body: 'Be cool',
+  },
+  {
+    body: "When you create, you must always feel a little bit uncomfortbale. And if you're feeling uncomfortable and alone, you know you're doing something right.",
+  },
+  {
+    body: 'Simplicity, Patience, and Compassion. Your 3 Greatest Treasures. -Tao Te Ching',
+  },
+  {
+    body: 'Moderation is freedom from one\'s own ideas. -Tao Te Ching',
+  },
+  {
+    body: 'Pain that isn\'t Transformed is Transmitted -Brene Brown'
+  },
+  {
+    body: 'Want a lil more? Chill a lil more -Hicks',
+  },
+  {
+    body: 'It isn\'t bout what I do. It\'s about how I feel -Hicks',
+  },
+  {
+    body: 'All we need to do\n is make sure\n we keep talking. -Stephen Hawking',
+  },
+  {
     body: 'Mood is Illusion',
   },
   {
