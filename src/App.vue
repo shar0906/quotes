@@ -1,16 +1,14 @@
 <template lang="pug">
   #app
+    Card
+      ButtonSpan
 
-    a(
-      v-if="quote.link"
-      :href="quote.link"
-    ) {{ quote.body }}
-
-    span(v-else) {{ quote.body }}
-    <!--<PwaNotification />-->
+    PwaNotification
 </template>
 
 <script>
+  import ButtonSpan from './components/ButtonSpan.vue'
+  import Card from './components/Card.vue'
   import PwaNotification from './components/PwaNotification.vue'
   import { getRandomQuote } from '@/quotes'
 
@@ -22,11 +20,10 @@
       }
     },
     components: {
+      ButtonSpan,
+      Card,
       PwaNotification,
-    },
-    mounted() {
-      this.quote = getRandomQuote()
-    },
+    }
   }
 </script>
 
@@ -36,7 +33,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: white;
+  margin-top: 100px;
 }
+
+body {
+  background-color: #F49782;
+}
+
 </style>

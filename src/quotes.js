@@ -3,25 +3,31 @@ export const quotes = [
     body: 'Be cool',
   },
   {
-    body: "When you create, you must always feel a little bit uncomfortbale. And if you're feeling uncomfortable and alone, you know you're doing something right.",
+    body: 'When you create, you must always feel a little bit uncomfortable. And if you\'re feeling uncomfortable and alone, you know you\'re doing something right.',
   },
   {
-    body: 'Simplicity, Patience, and Compassion. Your 3 Greatest Treasures. -Tao Te Ching',
+    body: 'Simplicity, Patience, and Compassion. Your 3 Greatest Treasures.',
+    author: 'Tao Te Ching',
   },
   {
-    body: 'Moderation is freedom from one\'s own ideas. -Tao Te Ching',
+    body: 'Moderation is freedom from one\'s own ideas.',
+    author:  'Tao Te Ching',
   },
   {
-    body: 'Pain that isn\'t Transformed is Transmitted -Brene Brown'
+    body: 'Pain that isn\'t Transformed is Transmitted',
+    author: 'Brene Brown',
   },
   {
-    body: 'Want a lil more? Chill a lil more -Hicks',
+    body: 'Want a lil more? Chill a lil more',
+    author: 'Hicks',
   },
   {
-    body: 'It isn\'t bout what I do. It\'s about how I feel -Hicks',
+    body: 'It isn\'t bout what I do. It\'s about how I feel',
+    author: 'Hicks',
   },
   {
-    body: 'All we need to do\n is make sure\n we keep talking. -Stephen Hawking',
+    body: 'All we need to do\n is make sure\n we keep talking.',
+    author: 'Stephen Hawking',
   },
   {
     body: 'Mood is Illusion',
@@ -34,25 +40,30 @@ export const quotes = [
   },
   {
     body: 'Mood swings as unresolved internal conflicts',
-    link: 'https://docs.google.com/document/d/1u1-az7tKfeVusg4fxPGbpZKierFkID-N8psiTrOrPqQ/edit',
+    link: 'https://docs.google.com/document/d/1u1az7tKfeVusg4fxPGbpZKierFkID-N8psiTrOrPqQ/edit',
   },
   {
     body: '"Nothing Bad is Happening" said the Giraffe to the Scared Boy',
   },
   {
-    body: '"People can only tell you what is best for them" -Esther Hicks',
+    body: 'People can only tell you what is best for them',
+    author: 'Esther Hicks'
   },
   {
-    body: '"How do you keep your heart open in hell?" -Ram Dass',
+    body: 'How do you keep your heart open in hell?',
+    author: 'Ram Dass',
   },
   {
-    body: '"You have no right to take away someone\'s suffering" -Ram Dass',
+    body: 'You have no right to take away someone\'s suffering',
+    author: 'Ram Dass',
   },
   {
-    body: '"Our spirit is fed by a boundless interaction by all that is around us." -Ram Dass',
+    body: 'Our spirit is fed by a boundless interaction by all that is around us.',
+    author: 'Ram Dass',
   },
   {
-    body: '"People want to hear what you have to say" -A Star Is Born',
+    body: 'People want to hear what you have to say',
+    author: 'A Star Is Born',
   },
   {
     body: '1st Relax',
@@ -61,16 +72,20 @@ export const quotes = [
     body: 'Seeking Harmony w/o Desiring It',
   },
   {
-    body: 'Dismantle The Machine. All Answers Lie Beneath. -Luna',
+    body: 'Dismantle The Machine. All Answers Lie Beneath.',
+    author: 'Luna',
   },
   {
-    body: 'Trying to fix yourself, you\'ll never do it. -Luna',
+    body: 'Trying to fix yourself, you\'ll never do it.',
+    author: 'Luna',
   },
   {
-    body: 'Codify Insights. Update Environment. -Luna',
+    body: 'Codify Insights. Update Environment.',
+    author: 'Luna'
   },
   {
-    body: 'Make a decision once. Then just make efforts. -Luna',
+    body: 'Make a decision once. Then just make efforts.',
+    author: 'Luna',
   },
 ]
 
