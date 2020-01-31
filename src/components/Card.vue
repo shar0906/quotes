@@ -11,8 +11,7 @@
 
           div
           span.buttonBar
-            button(@click="submitNewQuote") Submit
-            //- ButtonSpan(@click="submitNewQuote()" type="submitButton" label="Submit")
+            ButtonSpan(@click.native="submitNewQuote()" type="submitButton" label="Submit")
 
         div(v-if="mode==='getNewQuote'")
           div.quote
@@ -23,12 +22,9 @@
           span.quote-author(v-else) -Artist Unknown
     
           span.buttonBar
-            button(@click="deleteQuote") ╳ Not Feeling It
-            button(@click="getNewQuote") ♺ Another Quote
-            button(@click="addNewQuote") + New Quote
-            // ButtonSpan(@click="deleteQuote" type="deleteButton" label="╳ Not Feeling It")
-            // ButtonSpan(@click="getNewQuote" type="getNewButton" label="♺ Another Quote")
-            // ButtonSpan(@click="addNewQuote" type="addNewButton" label="+ New Quote")
+            ButtonSpan(@click.native="deleteQuote" type="deleteButton" label="╳ Not Feeling It")
+            ButtonSpan(@click.native="getNewQuote" type="getNewButton" label="♺ Another Quote")
+            ButtonSpan(@click.native="addNewQuote" type="addNewButton" label="+ New Quote")
 
 </template>
 
@@ -127,6 +123,7 @@ textarea {
   width: 600px;
 	height: 120px;
   margin-bottom: 10px;
+  display: inline-block;
 }
 
 input[type="text"] {
@@ -134,6 +131,7 @@ input[type="text"] {
   width: 600px;
   height: 45px;
   margin-bottom: 10px;
+  display: inline-block;
 }
 
 
