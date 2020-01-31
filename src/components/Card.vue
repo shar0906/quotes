@@ -58,7 +58,10 @@
       },
 
       deleteQuote(quote_id) {
-        localStorage.removeItem('newQuote_'+parseString(quote_id));
+      
+      localStorage.removeItem('newQuote_${quote_id}');
+      console.log('removed')
+      console.log(quotes)
       },
 
       submitNewQuote(e) {
@@ -71,7 +74,7 @@
         this.quote = newQuote;
         this.newQuoteCount = this.newQuoteCount + 1;
 
-        localStorage.setItem('newQuote_'+parseString(this.newQuoteCount), JSON.stringify(newQuote));
+        localStorage.setItem('newQuote_${this.newQuoteCount}', JSON.stringify(newQuote));
 
         this.newQuoteBody = '';
         this.newQuoteAuthor = '';
